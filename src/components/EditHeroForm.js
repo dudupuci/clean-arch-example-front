@@ -26,10 +26,10 @@ function EditHeroForm({ open, onClose, onSubmit, hero }) {
             setName(hero.name);
             setRace(hero.race);
             setPowerStats({
-                strength: hero.powerStatsOutput?.strength || '',
-                agility: hero.powerStatsOutput?.agility || '',
-                dexterity: hero.powerStatsOutput?.dexterity || '',
-                intelligence: hero.powerStatsOutput?.intelligence || ''
+                strength: hero.power_stats?.strength || '',
+                agility: hero.power_stats?.agility || '',
+                dexterity: hero.power_stats?.dexterity || '',
+                intelligence: hero.power_stats?.intelligence || ''
             });
             setEnabled(hero.enabled);
         }

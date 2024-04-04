@@ -152,7 +152,7 @@
                                 <Typography variant="body1" gutterBottom sx={{ mt: 2 }}>
                                     <span style={{ color: 'purple' }}>Details:</span>
                                 </Typography>
-                                <ul>
+                                <ul style={{fontSize: '14px'}}>
                                     {comparisonResult.details.map((detail, index) => (
                                         <li key={index}>{detail}</li>
                                     ))}
