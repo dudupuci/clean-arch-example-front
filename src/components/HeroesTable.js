@@ -50,10 +50,10 @@ export default function HeroesTable() {
                 {hero.name}
               </TableCell>
               <TableCell align="right">{hero.race}</TableCell>
-              <TableCell align="right">{hero.powerStatsOutput.strength}</TableCell>
-              <TableCell align="right">{hero.powerStatsOutput.agility}</TableCell>
-              <TableCell align="right">{hero.powerStatsOutput.dexterity}</TableCell>
-              <TableCell align="right">{hero.powerStatsOutput.intelligence}</TableCell>
+              <TableCell align="right">{hero.power_stats.strength}</TableCell>
+              <TableCell align="right">{hero.power_stats.agility}</TableCell>
+              <TableCell align="right">{hero.power_stats.dexterity}</TableCell>
+              <TableCell align="right">{hero.power_stats.intelligence}</TableCell>
               <TableCell align="right">{hero.enabled ? 'Yes' : 'No'}</TableCell>
               <TableCell align="right">
                 <EditIcon onClick={() => handleEditClick(hero)} />
